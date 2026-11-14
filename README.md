@@ -51,21 +51,19 @@ examples/作品模板/00-清单.md
 
 在 `images/` 下新建文件夹，名称使用作品的常用中文名，例如 `images/星穹铁道/` 或 `images/崩坏3/`。复制 [examples/作品模板/00-清单.md](examples/作品模板/00-清单.md) 到新目录，保持文件名为 `00-清单.md`，再按上面四步收集图片。皮肤立绘放在清单单独的「## 皮肤」小节，命名 `角色名（皮肤名）`。
 
-## 下载单个作品
+## 手机下载
 
-不必下载整个仓库。打开作品文件夹后，可用 [download-directory](https://download-directory.github.io/?url=https://github.com/cjhkcjgk3-sys/character-image-staging-2/tree/main/images/%E9%B8%A3%E6%BD%AE) 只打包 `images/鸣潮/`；其他作品把链接里的路径换成对应文件夹即可。若已克隆仓库，也可以只压缩该目录：
+打开本仓库的 [图片下载](https://github.com/cjhkcjgk3-sys/character-image-staging-2/releases/tag/downloads) 页面，点要下的作品即可，例如 FGO 是 `fgo.zip`、蔚蓝档案是 `blue-archive.zip`。页面上有中文作品名和英文文件名的对照。图片有更新时，这个页面会自动换成最新的包。还没有图片的作品（例如目前的崩坏3、碧蓝幻想、主机与PC游戏）不会出现在列表里。
 
-```sh
-zip -r 原神.zip images/原神
-```
+下好后，在小说自动生成器的批量写卡里「导入作品 ZIP」，再用「📋 从清单添加到名单」勾选角色。压缩包上限 1 GB。
 
-不必等清单全部勾选；可先打包已有图片，后续再补充。
+若只想自己打包某个文件夹，也可用 [download-directory](https://download-directory.github.io/?url=https://github.com/cjhkcjgk3-sys/character-image-staging-2/tree/main/images/FGO) 或本地 `zip -r FGO.zip images/FGO`。不必等清单全部勾选，可先打包已有图片。
 
 ## 在小说生成器里使用
 
 小说自动生成器 1.13 起支持作品 ZIP 图片库（1.15.1 为当前版本）：
 
-1. 把作品文件夹打成 ZIP 下载到手机（下面的 download-directory 链接或 `zip -r` 都行，清单在 ZIP 根目录或作品子目录都能识别；压缩后上限 1 GB）。
+1. 打开本仓库的 [图片下载](https://github.com/cjhkcjgk3-sys/character-image-staging-2/releases/tag/downloads) 页面，把要导入的作品 ZIP 下到手机（清单已打在包里；压缩后上限 1 GB）。
 2. 在生成器的批量写卡里“导入作品 ZIP”。导入只读目录并生成小缩略图，原图在点开或发送时才读取。
 3. 点“📋 从清单添加到名单”，勾选角色后“➕ 加入名单”，名字按清单原样加入，重复的自动跳过；皮肤在单独的折叠分组里。
 4. 名单每行左边是名字、右边是缩略图：有缩略图＝有图，虚线空框＝无图，“?”＝多张候选无法确定。点缩略图看大图。
